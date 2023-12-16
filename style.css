@@ -6,6 +6,7 @@
    --main-background2: hsl(212, 23%, 69%);
    --main-background: #EDF2F8;
    --secondary-background: hsl(210, 46%, 95%);
+   --background-icon: #EDF1FA;
 }
 *{
    margin: 0;
@@ -13,7 +14,7 @@
    box-sizing: border-box;
 }
 body{
-   font-size: 13px;
+   font-size: 12px;
    font-family: 'Manrope', sans-serif;
    display: flex;
    flex-direction: column;
@@ -23,20 +24,51 @@ body{
 .container{
    display: flex;
    width: 570px;
-   height: 220px;
-   border: 1px solid black;
+   height: 240px;
    margin-top: 15em;
    background-color: white;
    border-radius: 10px;
    box-shadow: 1px 1px 1px .5;
 }
-img{
-   width: 5em;
-   height: 5em;
+.perfil img{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
 }
 .main-img{
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
    width: 220px;
-   height:218px;
+   height:240px;
+}
+.description{
+   padding: 2em;
+}
+.description h2{
+   color: var(--main-color);
+}
+.description p{
+   color: var(--secondary-color);
+   text-align: justify;
+   padding: 0.7em 0em;
+   font-size: 12px;
+
+}
+.perfil{
+   display: flex;
+   justify-content: flex-start;
+   position: relative;
+}
+.perfil-info{
+   width: 12em;
+   padding-left: 1em;
+}
+.perfil-info p{
+   padding: 0.3em;
+}
+#share-icon{
+   position: absolute;
+   right: 0px;
+   background-color: var(--main-background);
+   padding: .8em;
 }
